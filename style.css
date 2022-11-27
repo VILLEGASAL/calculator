@@ -1,0 +1,130 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-weight: 900;
+}
+
+.__main-container{
+
+    width: 100vw;
+    background-color: #6B728E;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.__calc-container{
+
+    background-color: #6B728E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.__calc-container .__display-container input{
+
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    border-radius: 10px;
+    background-color: #474E68;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+
+.__calc-container .__btns-container{
+
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "row-1"
+        "row-2"
+        "row-3"
+        "row-4"
+        "row-5";
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #50577A;
+}
+
+.__calc-container .__btns-container .__row-1{
+
+    grid-area: row-1;
+}
+
+.__calc-container .__btns-container .__row-2{
+
+    grid-area: row-2;
+}
+
+.__calc-container .__btns-container .__row-3{
+
+    grid-area: row-3;
+}
+
+.__calc-container .__btns-container .__row-4{
+
+    grid-area: row-4;
+}
+
+.__calc-container .__btns-container .__row-5{
+
+    grid-area: row-5;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.__calc-container .__btns-container .__row-5 button{
+
+    min-width: 49%;
+    min-height: 70px;
+}
+
+.__calc-container .__btns-container .__row-1,
+.__calc-container .__btns-container .__row-2,
+.__calc-container .__btns-container .__row-3,
+.__calc-container .__btns-container .__row-4,
+.__calc-container .__btns-container .__row-5{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.__norm-buttons{
+
+    min-width: 70px;
+    min-height: 70px;
+    font-weight: 700;
+    font-size: 5rem;
+    border-radius: 10px;
+}
+
+
+@media (min-width: 500px){
+
+    .__main-container{
+        
+        padding: 0 10px;
+    }
+
+    .__calc-container{
+
+        max-width: 500px;        
+        gap: 30px;
+        padding: 20px;
+    }
+    
+
+}
